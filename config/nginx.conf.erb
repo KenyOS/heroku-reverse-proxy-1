@@ -38,6 +38,12 @@ http {
 		   rewrite ^(.*)$ https://$host$1 permanent;
 		 }
 	}
+	server {
+		listen <%= ENV["PORT"] %>;
+		server_name = ttrss.$host
 
+		location / {
+			return 302 "https://$host/tt-rss${uri}";
+	}
 
 }
