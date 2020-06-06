@@ -18,6 +18,7 @@ http {
 
 	server {
 		listen <%= ENV["PORT"] %>;
+		server_name <%= ENV["DOMAIN"] %>;
 
 		location / {
 			proxy_pass <%= ENV["UPSTREAM_SERVER"] %>;
