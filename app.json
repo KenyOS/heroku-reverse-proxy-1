@@ -13,7 +13,10 @@
 	],
 	"env": {
 		"UPSTREAM_SERVER": {
-			"description": "URL of upstream server to which all requests should be proxied"
+			"main-proxy"
+		}
+		"UPSTREAM_SERVER2": {
+			"serv2"
 		}
 	},
 	"stack": "heroku-16"
