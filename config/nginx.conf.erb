@@ -44,8 +44,6 @@ http {
 		server_name = <%= ENV["SUBDOMAIN1"] %>
 
 		location / {
-			proxy_pass <%= ENV["UPSTREAM_SERVER2"] %>;
-			proxy_http_version 1.1;
-			proxy_buffering off;
+			return 302 "<%= ENV["DOMAIN"] %>/tt-rss${uri}
 	}
 }
