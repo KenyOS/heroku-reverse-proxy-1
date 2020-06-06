@@ -44,7 +44,7 @@ http {
 		server_name <%= ENV["SUBDOMAIN1"] %>;
 
 		location / {
-			rewrite ^(.*)$ https://$host/tt-rss$1 ;
+			rewrite ^(.*)$ https://<%= ENV["DOMAIN"] %>/tt-rss$1 ;
 		}
 	}
 
