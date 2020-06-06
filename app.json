@@ -19,7 +19,10 @@
 			"serv2"
 		}
 		"SUBDOMAIN1": {
-			"serv2"
+			"serv2subdomain"
+		}
+		"DOMAIN": {
+			"domain"
 		}
 
 	},
