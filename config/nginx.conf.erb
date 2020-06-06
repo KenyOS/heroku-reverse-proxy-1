@@ -41,9 +41,9 @@ http {
 
 	server {
 		listen <%= ENV["PORT"] %>;
-		server_name = <%= ENV["SUBDOMAIN1"] %>
+		server_name = <%= ENV["SUBDOMAIN1"] %>;
 
 		location / {
-			return 302 "<%= ENV["DOMAIN"] %>/tt-rss${uri}
+			return 302 "https://$host/tt-rss${uri}";
 	}
 }
