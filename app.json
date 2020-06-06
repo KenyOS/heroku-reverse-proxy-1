@@ -18,6 +18,10 @@
 		"UPSTREAM_SERVER2": {
 			"serv2"
 		}
+		"SUBDOMAIN1": {
+			"serv2"
+		}
+
 	},
 	"stack": "heroku-16"
 }
