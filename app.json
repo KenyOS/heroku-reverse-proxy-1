@@ -18,8 +18,14 @@
 		"UPSTREAM_SERVER2": {
 			"serv2"
 		}
+		"UPSTREAM_SERVER3": {
+			"serv3"
+		}
 		"SUBDOMAIN1": {
 			"serv2subdomain"
+		"SUBDOMAIN3": {
+			"serv3subdomain"
+		}
 		}
 		"SUBPATH1": {
 			"serv2subpath"
