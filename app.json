@@ -21,6 +21,9 @@
 		"SUBDOMAIN1": {
 			"serv2subdomain"
 		}
+		"SUBPATH1": {
+			"serv2subpath"
+		}
 		"DOMAIN": {
 			"domain"
 		}
