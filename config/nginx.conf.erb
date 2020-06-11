@@ -43,12 +43,26 @@ http {
 		   rewrite ^(.*)$ https://$host$1 permanent;
 		 }
 	}
+	#sv1
 	server {
 		listen <%= ENV["PORT"] %>;
 		server_name <%= ENV["SUBDOMAIN1"] %>;
 
 		location / {
-			rewrite ^(.*)$ https://<%= ENV["DOMAIN"] %>/tt-rss$1 ;
+			rewrite ^(.*)$ https://<%= ENV["DOMAIN"] %>/<%= ENV["SUBPATH1"] %>$1 ;
+
+		}
+	#sv2
+	server {
+		listen <%= ENV["PORT"] %>;
+		server_name <%= ENV["SUBDOMAIN3"] %>;
+
+		location / {
+			proxy_pass <%= ENV["UPSTREAM_SERVER3"] %>;
+			proxy_set_header Host $host;
+   			proxy_set_header X-Real-IP $remote_addr;
+    			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    			proxy_set_header X-Forwarded-Proto $scheme;
 
 		}
 	}
