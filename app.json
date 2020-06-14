@@ -24,6 +24,27 @@
 		"UPSTREAM_SERVER4": {
 			"serv4"
 		}
+		"UPSTREAM_SERVER5": {
+			"serv5"
+		}
+		"UPSTREAM_SERVER6": {
+			"serv6"
+		}
+		"UPSTREAM_SERVER7": {
+			"serv7"
+		}
+		"UPSTREAM_SERVER8": {
+			"serv8"
+		}
+		"UPSTREAM_SERVER9": {
+			"serv9"
+		}
+		"UPSTREAM_SERVER10": {
+			"serv10"
+		}
+		"UPSTREAM_SERVER5": {
+			"serv5"
+		}
 
 		"SUBDOMAIN1": {
 			"serv2subdomain"
@@ -33,6 +54,24 @@
 		}
 		"SUBDOMAIN4": {
 			"serv4subdomain"
+		}
+		"SUBDOMAIN5": {
+			"serv5subdomain"
+		}
+		"SUBDOMAIN6": {
+			"serv6subdomain"
+		}
+		"SUBDOMAIN7": {
+			"serv7subdomain"
+		}
+		"SUBDOMAIN8": {
+			"serv8subdomain"
+		}
+		"SUBDOMAIN9": {
+			"serv9subdomain"
+		}
+		"SUBDOMAIN10": {
+			"serv10subdomain"
 		}
 		
 		"SUBPATH1": {
