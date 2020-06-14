@@ -42,9 +42,7 @@
 		"UPSTREAM_SERVER10": {
 			"serv10"
 		}
-		"UPSTREAM_SERVER5": {
-			"serv5"
-		}
+
 
 		"SUBDOMAIN1": {
 			"serv2subdomain"
