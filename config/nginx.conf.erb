@@ -73,12 +73,7 @@ http {
         		proxy_set_header X-Nginx-Proxy true;
 
         		proxy_redirect off;
-
 		}
-		#This forces HTTPS but we don't want that, we'll stay on port 80 http
-		#	if ($http_x_forwarded_proto != "https") {
-		#   		rewrite ^(.*)$ https://$host$1 permanent;
-		# 	}
 	}
 
 	#sv4
@@ -101,10 +96,6 @@ http {
         		proxy_redirect off;
 
 		}
-		#This forces HTTPS but we don't want that, we'll stay on port 80 http
-			if ($http_x_forwarded_proto != "https") {
-		   		rewrite ^(.*)$ https://$host$1 permanent;
-		 	}
 	}
 
 	#sv5
@@ -140,10 +131,6 @@ http {
         		proxy_redirect off;
 
 		}
-		#This forces HTTPS but we don't want that, we'll stay on port 80 http
-			if ($http_x_forwarded_proto != "https") {
-		   		rewrite ^(.*)$ https://$host$1 permanent;
-		 	}
 	}
 
 
