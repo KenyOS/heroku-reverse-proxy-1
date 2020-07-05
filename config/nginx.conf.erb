@@ -14,7 +14,7 @@ http {
 	access_log logs/nginx/access.log l2met;
 	error_log logs/nginx/error.log;
 
-	server_tokens off;
+	server_tokens on;
 
 	server {
 		listen <%= ENV["PORT"] %>;
@@ -38,10 +38,6 @@ http {
 		}
 
 
-		#This forces HTTPS but we don't want that, we'll stay on port 80 http
-		if ($http_x_forwarded_proto != "https") {
-		   rewrite ^(.*)$ https://$host$1 permanent;
-		 }
 	}
 	#sv1
 	server {
