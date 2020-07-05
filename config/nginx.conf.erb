@@ -14,7 +14,7 @@ http {
 	access_log logs/nginx/access.log l2met;
 	error_log logs/nginx/error.log;
 
-	server_tokens on;
+	server_tokens off;
 
 	server {
 		listen <%= ENV["PORT"] %>;
