@@ -53,8 +53,9 @@ http {
     			proxy_set_header X-Forwarded-Proto $scheme;
 
 			#safe mode
-			#allow my.public.ip.here;
-			#deny all;
+			allow 192.168.1.0/24;
+			allow 345.123.456.123;
+			deny  all;
 
 		}
 
