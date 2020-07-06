@@ -46,7 +46,15 @@ http {
 		server_name <%= ENV["SUBDOMAIN1"] %>;
 
 		location / {
-			rewrite ^(.*)$ https://<%= ENV["DOMAIN"] %>/<%= ENV["SUBPATH1"] %>$1 ;
+			proxy_pass <%= ENV["UPSTREAM_SERVER2"] %>;
+			proxy_set_header Host $host;
+   			proxy_set_header X-Real-IP $remote_addr;
+    			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    			proxy_set_header X-Forwarded-Proto $scheme;
+
+			#safe mode
+			#allow my.public.ip.here;
+			#deny all;
 
 		}
 
