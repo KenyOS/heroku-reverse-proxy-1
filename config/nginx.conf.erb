@@ -26,9 +26,6 @@ http {
 			proxy_buffering off;
 		}
 		
-		location /ghost {
-			limit_req  zone=one burst=5 nodelay;
-		}
 		location /<%= ENV["SUBPATH1"] %> {
 			proxy_pass <%= ENV["UPSTREAM_SERVER2"] %>;
 			proxy_set_header Host $host;
